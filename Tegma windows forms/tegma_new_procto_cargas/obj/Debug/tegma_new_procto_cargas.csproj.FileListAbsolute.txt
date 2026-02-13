@@ -8,4 +8,5 @@ C:\Users\PC\OneDrive\Área de Trabalho\Tegma projeto\Tegma windows forms\tegma_n
 C:\Users\PC\OneDrive\Área de Trabalho\Tegma projeto\Tegma windows forms\tegma_new_procto_cargas\obj\Debug\tegma_new_procto_cargas.exe
 C:\Users\PC\OneDrive\Área de Trabalho\Tegma projeto\Tegma windows forms\tegma_new_procto_cargas\obj\Debug\tegma_new_procto_cargas.pdb
 C:\Users\PC\OneDrive\Área de Trabalho\Tegma projeto\Tegma windows forms\tegma_new_procto_cargas\obj\Debug\tegma_new_procto_cargas.exe.config
-C:\Users\PC\OneDrive\Área de Trabalho\Tegma projeto\Tegma windows forms\tegma_new_procto_cargas\obj\Debug\tegma_new_procto_cargas.Form1.resources
+C:\Users\PC\OneDrive\Área de Trabalho\Tegma projeto\Tegma windows forms\tegma_new_procto_cargas\obj\Debug\tegma_new_procto_cargas.formPrincipal.resources
+C:\Users\PC\OneDrive\Área de Trabalho\Tegma projeto\Tegma windows forms\tegma_new_procto_cargas\obj\Debug\tegma_new_procto_cargas.frmPesquisa.resources

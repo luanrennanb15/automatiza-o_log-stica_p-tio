@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace tegma_new_procto_cargas
 {
-    public partial class Form1 : Form
+    public partial class formPrincipal : Form
     {
-        public Form1()
+        public formPrincipal()
         {
             InitializeComponent();
         }
@@ -28,6 +28,11 @@ namespace tegma_new_procto_cargas
         }
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
