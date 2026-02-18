@@ -16,7 +16,7 @@ namespace tegma_new_procto_cargas
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new formPrincipal());
+            Application.Run(new frmPrincipal());
         }
     }
 }

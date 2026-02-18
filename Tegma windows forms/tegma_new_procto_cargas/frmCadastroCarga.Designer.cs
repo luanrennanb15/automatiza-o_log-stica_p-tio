@@ -1,6 +1,6 @@
 ﻿namespace tegma_new_procto_cargas
 {
-    partial class frmEditarCarga
+    partial class frmCadastroCarga
     {
         /// <summary>
         /// Required designer variable.
@@ -30,15 +30,14 @@
         {
             this.SuspendLayout();
             // 
-            // frmEditarCarga
+            // frmCadastroCarga
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlText;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frmEditarCarga";
-            this.Text = "frmEditarCarga";
+            this.Name = "frmCadastroCarga";
+            this.Text = "frmCadastroCarga";
             this.ResumeLayout(false);
 
         }

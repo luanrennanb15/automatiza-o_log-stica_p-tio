@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="frmCadastroCarga.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="frmCadastroCarga.Designer.cs">
+      <DependentUpon>frmCadastroCarga.cs</DependentUpon>
     </Compile>
     <Compile Include="frmEditarCarga.cs">
       <SubType>Form</SubType>
@@ -58,22 +58,40 @@
     <Compile Include="frmEditarCarga.Designer.cs">
       <DependentUpon>frmEditarCarga.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmExcluirCarga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExcluirCarga.Designer.cs">
+      <DependentUpon>frmExcluirCarga.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPesquisa.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmPesquisa.Designer.cs">
       <DependentUpon>frmPesquisa.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="frmCadastroCarga.resx">
+      <DependentUpon>frmCadastroCarga.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmEditarCarga.resx">
       <DependentUpon>frmEditarCarga.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmExcluirCarga.resx">
+      <DependentUpon>frmExcluirCarga.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPesquisa.resx">
       <DependentUpon>frmPesquisa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
