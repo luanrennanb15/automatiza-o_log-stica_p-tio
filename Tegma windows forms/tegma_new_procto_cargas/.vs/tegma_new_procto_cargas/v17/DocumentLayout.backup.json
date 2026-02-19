@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\PC\\OneDrive\\\u00C1rea de Trabalho\\Tegma projeto\\Tegma windows forms\\tegma_new_procto_cargas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B328918F-447A-42B7-8F77-A3E69160AC4B}|tegma_new_procto_cargas.csproj|C:\\Users\\PC\\OneDrive\\\u00C1rea de Trabalho\\Tegma projeto\\Tegma windows forms\\tegma_new_procto_cargas\\frmcadastrocarga.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{B328918F-447A-42B7-8F77-A3E69160AC4B}|tegma_new_procto_cargas.csproj|c:\\users\\pc\\onedrive\\\u00E1rea de trabalho\\tegma projeto\\tegma windows forms\\tegma_new_procto_cargas\\frmcadastrocarga.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B328918F-447A-42B7-8F77-A3E69160AC4B}|tegma_new_procto_cargas.csproj|solutionrelative:frmcadastrocarga.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B328918F-447A-42B7-8F77-A3E69160AC4B}|tegma_new_procto_cargas.csproj|c:\\users\\pc\\onedrive\\\u00E1rea de trabalho\\tegma projeto\\tegma windows forms\\tegma_new_procto_cargas\\frmcadastrocarga.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B328918F-447A-42B7-8F77-A3E69160AC4B}|tegma_new_procto_cargas.csproj|solutionrelative:frmcadastrocarga.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B328918F-447A-42B7-8F77-A3E69160AC4B}|tegma_new_procto_cargas.csproj|c:\\users\\pc\\onedrive\\\u00E1rea de trabalho\\tegma projeto\\tegma windows forms\\tegma_new_procto_cargas\\conexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B328918F-447A-42B7-8F77-A3E69160AC4B}|tegma_new_procto_cargas.csproj|solutionrelative:conexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B328918F-447A-42B7-8F77-A3E69160AC4B}|tegma_new_procto_cargas.csproj|C:\\Users\\PC\\OneDrive\\\u00C1rea de Trabalho\\Tegma projeto\\Tegma windows forms\\tegma_new_procto_cargas\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -31,14 +39,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "frmPrincipal.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\\u00C1rea de Trabalho\\Tegma projeto\\Tegma windows forms\\tegma_new_procto_cargas\\frmPrincipal.cs",
-              "RelativeDocumentMoniker": "frmPrincipal.cs",
-              "ToolTip": "C:\\Users\\PC\\OneDrive\\\u00C1rea de Trabalho\\Tegma projeto\\Tegma windows forms\\tegma_new_procto_cargas\\frmPrincipal.cs [Design]",
-              "RelativeToolTip": "frmPrincipal.cs [Design]",
+              "Title": "frmCadastroCarga.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\\u00C1rea de Trabalho\\Tegma projeto\\Tegma windows forms\\tegma_new_procto_cargas\\frmCadastroCarga.cs",
+              "RelativeDocumentMoniker": "frmCadastroCarga.cs",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\\u00C1rea de Trabalho\\Tegma projeto\\Tegma windows forms\\tegma_new_procto_cargas\\frmCadastroCarga.cs*",
+              "RelativeToolTip": "frmCadastroCarga.cs*",
+              "ViewState": "AgIAAJYAAAAAAAAAAAAIwLEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-17T22:40:13.42Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-02-18T20:35:42.915Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -46,10 +55,35 @@
               "Title": "frmCadastroCarga.cs [Design]",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\\u00C1rea de Trabalho\\Tegma projeto\\Tegma windows forms\\tegma_new_procto_cargas\\frmCadastroCarga.cs",
               "RelativeDocumentMoniker": "frmCadastroCarga.cs",
-              "ToolTip": "C:\\Users\\PC\\OneDrive\\\u00C1rea de Trabalho\\Tegma projeto\\Tegma windows forms\\tegma_new_procto_cargas\\frmCadastroCarga.cs [Design]",
-              "RelativeToolTip": "frmCadastroCarga.cs [Design]",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\\u00C1rea de Trabalho\\Tegma projeto\\Tegma windows forms\\tegma_new_procto_cargas\\frmCadastroCarga.cs [Design]*",
+              "RelativeToolTip": "frmCadastroCarga.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-17T23:02:25.282Z",
+              "WhenOpened": "2026-02-18T20:34:04.662Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Conexao.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\\u00C1rea de Trabalho\\Tegma projeto\\Tegma windows forms\\tegma_new_procto_cargas\\Conexao.cs",
+              "RelativeDocumentMoniker": "Conexao.cs",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\\u00C1rea de Trabalho\\Tegma projeto\\Tegma windows forms\\tegma_new_procto_cargas\\Conexao.cs",
+              "RelativeToolTip": "Conexao.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-18T20:26:24.333Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmPrincipal.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\\u00C1rea de Trabalho\\Tegma projeto\\Tegma windows forms\\tegma_new_procto_cargas\\frmPrincipal.cs",
+              "RelativeDocumentMoniker": "frmPrincipal.cs",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\\u00C1rea de Trabalho\\Tegma projeto\\Tegma windows forms\\tegma_new_procto_cargas\\frmPrincipal.cs [Design]",
+              "RelativeToolTip": "frmPrincipal.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-17T22:40:13.42Z",
               "EditorCaption": " [Design]"
             }
           ]
