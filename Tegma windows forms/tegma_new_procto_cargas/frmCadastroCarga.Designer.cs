@@ -48,6 +48,7 @@
             this.colPosicao = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnLimpar = new System.Windows.Forms.Button();
             this.btnAdicionar = new System.Windows.Forms.Button();
+            this.sqlDataAdapter1 = new Microsoft.Data.SqlClient.SqlDataAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvItens)).BeginInit();
             this.SuspendLayout();
@@ -128,6 +129,7 @@
             this.txtPlaca.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPlaca.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPlaca.Location = new System.Drawing.Point(217, 29);
+            this.txtPlaca.MaxLength = 7;
             this.txtPlaca.Name = "txtPlaca";
             this.txtPlaca.Size = new System.Drawing.Size(100, 23);
             this.txtPlaca.TabIndex = 10;
@@ -137,6 +139,7 @@
             this.txtQuantidadeVeiculos.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtQuantidadeVeiculos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtQuantidadeVeiculos.Location = new System.Drawing.Point(442, 29);
+            this.txtQuantidadeVeiculos.MaxLength = 2;
             this.txtQuantidadeVeiculos.Name = "txtQuantidadeVeiculos";
             this.txtQuantidadeVeiculos.Size = new System.Drawing.Size(47, 23);
             this.txtQuantidadeVeiculos.TabIndex = 11;
@@ -150,12 +153,13 @@
             this.btnSalvar.TabIndex = 57;
             this.btnSalvar.Text = "SALVAR";
             this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // txtQuantidadeEntregas
             // 
-            this.txtQuantidadeEntregas.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtQuantidadeEntregas.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtQuantidadeEntregas.Location = new System.Drawing.Point(658, 29);
+            this.txtQuantidadeEntregas.MaxLength = 2;
             this.txtQuantidadeEntregas.Name = "txtQuantidadeEntregas";
             this.txtQuantidadeEntregas.Size = new System.Drawing.Size(45, 23);
             this.txtQuantidadeEntregas.TabIndex = 58;
@@ -184,6 +188,7 @@
             this.txtFrota.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtFrota.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFrota.Location = new System.Drawing.Point(32, 29);
+            this.txtFrota.MaxLength = 5;
             this.txtFrota.Name = "txtFrota";
             this.txtFrota.Size = new System.Drawing.Size(100, 23);
             this.txtFrota.TabIndex = 9;
@@ -193,6 +198,7 @@
             this.txtObservacao.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtObservacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtObservacao.Location = new System.Drawing.Point(32, 93);
+            this.txtObservacao.MaxLength = 100;
             this.txtObservacao.Name = "txtObservacao";
             this.txtObservacao.Size = new System.Drawing.Size(429, 23);
             this.txtObservacao.TabIndex = 61;
@@ -211,6 +217,7 @@
             this.dgvItens.Name = "dgvItens";
             this.dgvItens.Size = new System.Drawing.Size(724, 340);
             this.dgvItens.TabIndex = 62;
+            this.dgvItens.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.dgvItens_EditingControlShowing);
             // 
             // colModelo
             // 
@@ -304,5 +311,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colPosicao;
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.Button btnAdicionar;
+        private Microsoft.Data.SqlClient.SqlDataAdapter sqlDataAdapter1;
     }
 }

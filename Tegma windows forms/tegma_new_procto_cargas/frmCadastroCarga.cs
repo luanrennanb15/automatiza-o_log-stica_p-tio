@@ -14,68 +14,71 @@ namespace tegma_new_procto_cargas
 
         private void frmCadastroCarga_Load(object sender, EventArgs e)
         {
-            dgvItens.AllowUserToAddRows = false;
+            ConfigurarGrid();
             CarregarModelos();
             CarregarDestinos();
         }
 
-        private void CarregarModelos()
+        // =============================
+        // CONFIGURA GRID
+        // =============================
+        private void ConfigurarGrid()
         {
-            using (SqlConnection conn = Conexao.ObterConexao())
-            {
-                conn.Open();
-                SqlDataAdapter da = new SqlDataAdapter("SELECT NomeModelo FROM Modelos", conn);
-                DataTable dt = new DataTable();
-                da.Fill(dt);
+            dgvItens.Columns.Clear();
 
-                var col = (DataGridViewComboBoxColumn)dgvItens.Columns["colModelo"];
-                col.DataSource = dt;
-                col.DisplayMember = "NomeModelo";
-                col.ValueMember = "NomeModelo";
-            }
+            DataGridViewComboBoxColumn colModelo = new DataGridViewComboBoxColumn();
+            colModelo.Name = "Modelo";
+            colModelo.HeaderText = "Modelo";
+            dgvItens.Columns.Add(colModelo);
+
+            DataGridViewTextBoxColumn colPosicao = new DataGridViewTextBoxColumn();
+            colPosicao.Name = "Posicao";
+            colPosicao.HeaderText = "Posição";
+            dgvItens.Columns.Add(colPosicao);
+
+            DataGridViewComboBoxColumn colDestino = new DataGridViewComboBoxColumn();
+            colDestino.Name = "Destino";
+            colDestino.HeaderText = "Destino";
+            dgvItens.Columns.Add(colDestino);
         }
 
-        private void CarregarDestinos()
-        {
-            using (SqlConnection conn = Conexao.ObterConexao())
-            {
-                conn.Open();
-                SqlDataAdapter da = new SqlDataAdapter("SELECT NomeDestino FROM Destinos", conn);
-                DataTable dt = new DataTable();
-                da.Fill(dt);
-
-                var col = (DataGridViewComboBoxColumn)dgvItens.Columns["colDestino"];
-                col.DataSource = dt;
-                col.DisplayMember = "NomeDestino";
-                col.ValueMember = "NomeDestino";
-            }
-        }
-
+        // =============================
+        // BOTÃO ADICIONAR (INTELIGENTE)
+        // =============================
         private void btnAdicionar_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtQuantidadeVeiculos.Text))
+            if (string.IsNullOrWhiteSpace(txtQuantidadeVeiculos.Text))
             {
                 MessageBox.Show("Informe a quantidade de veículos primeiro.");
                 return;
             }
 
-            int quantidade = int.Parse(txtQuantidadeVeiculos.Text);
+            int quantidade;
 
-            if (quantidade > 12)
+            if (!int.TryParse(txtQuantidadeVeiculos.Text, out quantidade))
             {
-                MessageBox.Show("Máximo permitido é 12 veículos.");
+                MessageBox.Show("Quantidade inválida.");
                 return;
             }
 
-            if (dgvItens.Rows.Count >= quantidade)
+            if (quantidade <= 0 || quantidade > 12)
             {
-                MessageBox.Show("Quantidade máxima de veículos atingida.");
+                MessageBox.Show("Quantidade deve ser entre 1 e 12.");
                 return;
             }
 
-            dgvItens.Rows.Add();
+            dgvItens.Rows.Clear();
+
+            for (int i = 0; i < quantidade; i++)
+            {
+                dgvItens.Rows.Add();
+                dgvItens.Rows[i].Cells["Posicao"].Value = i + 1;
+            }
         }
 
+        // =============================
+        // BOTÃO LIMPAR
+        // =============================
         private void btnLimpar_Click(object sender, EventArgs e)
         {
             txtFrota.Clear();
@@ -86,92 +89,224 @@ namespace tegma_new_procto_cargas
             dgvItens.Rows.Clear();
         }
 
-        private void btnSalvar_Click(object sender, EventArgs e)
-        {
-            if (dgvItens.Rows.Count != int.Parse(txtQuantidadeVeiculos.Text))
-            {
-                MessageBox.Show("Quantidade de veículos não confere com os itens adicionados.");
-                return;
-            }
-
-            if (!ValidarPosicoes())
-                return;
-
-            SalvarCarga();
-        }
-
-        private bool ValidarPosicoes()
-        {
-            for (int i = 0; i < dgvItens.Rows.Count; i++)
-            {
-                for (int j = i + 1; j < dgvItens.Rows.Count; j++)
-                {
-                    if (dgvItens.Rows[i].Cells["colPosicao"].Value != null &&
-                        dgvItens.Rows[j].Cells["colPosicao"].Value != null)
-                    {
-                        if (dgvItens.Rows[i].Cells["colPosicao"].Value.ToString() ==
-                            dgvItens.Rows[j].Cells["colPosicao"].Value.ToString())
-                        {
-                            MessageBox.Show("Existe posição duplicada!");
-                            return false;
-                        }
-                    }
-                }
-            }
-            return true;
-        }
-
-        private void SalvarCarga()
+        // =============================
+        // CARREGAR MODELOS
+        // =============================
+        private void CarregarModelos()
         {
             using (SqlConnection conn = Conexao.ObterConexao())
             {
                 conn.Open();
+
+                SqlDataAdapter da = new SqlDataAdapter("SELECT NomeModelo FROM Modelos", conn);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+
+                DataGridViewComboBoxColumn col =
+                    (DataGridViewComboBoxColumn)dgvItens.Columns["Modelo"];
+
+                col.DataSource = dt;
+                col.DisplayMember = "NomeModelo";
+                col.ValueMember = "NomeModelo";
+            }
+        }
+
+        // =============================
+        // CARREGAR DESTINOS
+        // =============================
+        private void CarregarDestinos()
+        {
+            using (SqlConnection conn = Conexao.ObterConexao())
+            {
+                conn.Open();
+
+                SqlDataAdapter da = new SqlDataAdapter("SELECT NomeDestino FROM Destinos", conn);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+
+                DataGridViewComboBoxColumn col =
+                    (DataGridViewComboBoxColumn)dgvItens.Columns["Destino"];
+
+                col.DataSource = dt;
+                col.DisplayMember = "NomeDestino";
+                col.ValueMember = "NomeDestino";
+            }
+        }
+
+        // =============================
+        // DETECTA EDIÇÃO NA GRID
+        // =============================
+        private void dgvItens_EditingControlShowing(object sender, DataGridViewEditingControlShowingEventArgs e)
+        {
+            if (dgvItens.CurrentCell.ColumnIndex == dgvItens.Columns["Modelo"].Index)
+            {
+                ComboBox cb = e.Control as ComboBox;
+                if (cb != null)
+                {
+                    cb.DropDownStyle = ComboBoxStyle.DropDown;
+                    cb.Leave -= Modelo_Leave;
+                    cb.Leave += Modelo_Leave;
+                }
+            }
+
+            if (dgvItens.CurrentCell.ColumnIndex == dgvItens.Columns["Destino"].Index)
+            {
+                ComboBox cb = e.Control as ComboBox;
+                if (cb != null)
+                {
+                    cb.DropDownStyle = ComboBoxStyle.DropDown;
+                    cb.Leave -= Destino_Leave;
+                    cb.Leave += Destino_Leave;
+                }
+            }
+        }
+
+        // =============================
+        // NOVO MODELO
+        // =============================
+        private void Modelo_Leave(object sender, EventArgs e)
+        {
+            ComboBox cb = sender as ComboBox;
+            if (cb == null || string.IsNullOrWhiteSpace(cb.Text))
+                return;
+
+            using (SqlConnection conn = Conexao.ObterConexao())
+            {
+                conn.Open();
+
+                string verifica = "SELECT COUNT(*) FROM Modelos WHERE NomeModelo = @Nome";
+                SqlCommand cmdVerifica = new SqlCommand(verifica, conn);
+                cmdVerifica.Parameters.AddWithValue("@Nome", cb.Text.Trim());
+
+                int existe = (int)cmdVerifica.ExecuteScalar();
+
+                if (existe == 0)
+                {
+                    DialogResult r = MessageBox.Show(
+                        "Modelo não encontrado. Deseja cadastrar?",
+                        "Novo Modelo",
+                        MessageBoxButtons.YesNo,
+                        MessageBoxIcon.Question);
+
+                    if (r == DialogResult.Yes)
+                    {
+                        string insert = "INSERT INTO Modelos (NomeModelo) VALUES (@Nome)";
+                        SqlCommand cmdInsert = new SqlCommand(insert, conn);
+                        cmdInsert.Parameters.AddWithValue("@Nome", cb.Text.Trim());
+                        cmdInsert.ExecuteNonQuery();
+
+                        MessageBox.Show("Modelo cadastrado!");
+                        CarregarModelos();
+                    }
+                }
+            }
+        }
+
+        // =============================
+        // NOVO DESTINO
+        // =============================
+        private void Destino_Leave(object sender, EventArgs e)
+        {
+            ComboBox cb = sender as ComboBox;
+            if (cb == null || string.IsNullOrWhiteSpace(cb.Text))
+                return;
+
+            using (SqlConnection conn = Conexao.ObterConexao())
+            {
+                conn.Open();
+
+                string verifica = "SELECT COUNT(*) FROM Destinos WHERE NomeDestino = @Nome";
+                SqlCommand cmdVerifica = new SqlCommand(verifica, conn);
+                cmdVerifica.Parameters.AddWithValue("@Nome", cb.Text.Trim());
+
+                int existe = (int)cmdVerifica.ExecuteScalar();
+
+                if (existe == 0)
+                {
+                    DialogResult r = MessageBox.Show(
+                        "Destino não encontrado. Deseja cadastrar?",
+                        "Novo Destino",
+                        MessageBoxButtons.YesNo,
+                        MessageBoxIcon.Question);
+
+                    if (r == DialogResult.Yes)
+                    {
+                        string insert = "INSERT INTO Destinos (NomeDestino) VALUES (@Nome)";
+                        SqlCommand cmdInsert = new SqlCommand(insert, conn);
+                        cmdInsert.Parameters.AddWithValue("@Nome", cb.Text.Trim());
+                        cmdInsert.ExecuteNonQuery();
+
+                        MessageBox.Show("Destino cadastrado!");
+                        CarregarDestinos();
+                    }
+                }
+            }
+        }
+            private void btnSalvar_Click(object sender, EventArgs e)
+        {
+            if (dgvItens.Rows.Count == 0)
+            {
+                MessageBox.Show("Adicione os veículos antes de salvar.");
+                return;
+            }
+
+            using (SqlConnection conn = Conexao.ObterConexao())
+            {
+                conn.Open();
+
                 SqlTransaction trans = conn.BeginTransaction();
 
                 try
                 {
                     string sqlCarga = @"INSERT INTO Cargas 
-                    (Frota, Placa, QuantidadeVeiculos, QuantidadeEntregas, DataCarga, Observacao) 
-                    VALUES (@Frota, @Placa, @QtdVeiculos, @QtdEntregas, @Data, @Obs);
-                    SELECT SCOPE_IDENTITY();";
+                               (Frota, Placa, QuantidadeVeiculos, QuantidadeEntregas, DataCarga, Observacao)
+                               VALUES
+                               (@Frota, @Placa, @QtdVeic, @QtdEnt, @Data, @Obs);
+                               SELECT SCOPE_IDENTITY();";
 
                     SqlCommand cmdCarga = new SqlCommand(sqlCarga, conn, trans);
 
                     cmdCarga.Parameters.AddWithValue("@Frota", txtFrota.Text);
                     cmdCarga.Parameters.AddWithValue("@Placa", txtPlaca.Text);
-                    cmdCarga.Parameters.AddWithValue("@QtdVeiculos", int.Parse(txtQuantidadeVeiculos.Text));
-                    cmdCarga.Parameters.AddWithValue("@QtdEntregas", int.Parse(txtQuantidadeEntregas.Text));
-                    cmdCarga.Parameters.AddWithValue("@Data", dtpData.Value);
+                    cmdCarga.Parameters.AddWithValue("@QtdVeic", int.Parse(txtQuantidadeVeiculos.Text));
+                    cmdCarga.Parameters.AddWithValue("@QtdEnt", int.Parse(txtQuantidadeEntregas.Text));
+                    cmdCarga.Parameters.AddWithValue("@Data", DateTime.Now);
                     cmdCarga.Parameters.AddWithValue("@Obs", txtObservacao.Text);
 
-                    int cargaId = Convert.ToInt32(cmdCarga.ExecuteScalar());
+                    int idCarga = Convert.ToInt32(cmdCarga.ExecuteScalar());
 
                     foreach (DataGridViewRow row in dgvItens.Rows)
                     {
-                        string sqlItem = @"INSERT INTO ItensCarga 
-                        (CargaId, Modelo, Posicao, Destino) 
-                        VALUES (@CargaId, @Modelo, @Posicao, @Destino)";
+                        if (row.IsNewRow) continue;
+
+                        string sqlItem = @"INSERT INTO ItensCarga
+                                   (CargaId, Modelo, Posicao, Destino)
+                                   VALUES
+                                   (@CargaId, @Modelo, @Posicao, @Destino)";
 
                         SqlCommand cmdItem = new SqlCommand(sqlItem, conn, trans);
 
-                        cmdItem.Parameters.AddWithValue("@CargaId", cargaId);
-                        cmdItem.Parameters.AddWithValue("@Modelo", row.Cells["colModelo"].Value);
-                        cmdItem.Parameters.AddWithValue("@Posicao", row.Cells["colPosicao"].Value);
-                        cmdItem.Parameters.AddWithValue("@Destino", row.Cells["colDestino"].Value);
+                        cmdItem.Parameters.AddWithValue("@CargaId", idCarga);
+                        cmdItem.Parameters.AddWithValue("@Modelo", row.Cells["Modelo"].Value?.ToString());
+                        cmdItem.Parameters.AddWithValue("@Posicao", row.Cells["Posicao"].Value?.ToString());
+                        cmdItem.Parameters.AddWithValue("@Destino", row.Cells["Destino"].Value?.ToString());
 
                         cmdItem.ExecuteNonQuery();
                     }
 
                     trans.Commit();
                     MessageBox.Show("Carga salva com sucesso!");
+
                     btnLimpar_Click(null, null);
                 }
-                catch
+                catch (Exception ex)
                 {
                     trans.Rollback();
-                    MessageBox.Show("Erro ao salvar carga.");
+                    MessageBox.Show("Erro ao salvar: " + ex.Message);
                 }
             }
         }
+
     }
 }
+
