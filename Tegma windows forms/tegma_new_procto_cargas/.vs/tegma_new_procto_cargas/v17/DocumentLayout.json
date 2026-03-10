@@ -3,24 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\PC\\OneDrive\\\u00C1rea de Trabalho\\Tegma projeto\\Tegma windows forms\\tegma_new_procto_cargas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B328918F-447A-42B7-8F77-A3E69160AC4B}|tegma_new_procto_cargas.csproj|c:\\users\\pc\\onedrive\\\u00E1rea de trabalho\\tegma projeto\\tegma windows forms\\tegma_new_procto_cargas\\frmcadastrocarga.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{B328918F-447A-42B7-8F77-A3E69160AC4B}|tegma_new_procto_cargas.csproj|c:\\users\\pc\\onedrive\\\u00E1rea de trabalho\\tegma projeto\\tegma windows forms\\tegma_new_procto_cargas\\frmeditarcarga.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B328918F-447A-42B7-8F77-A3E69160AC4B}|tegma_new_procto_cargas.csproj|solutionrelative:frmeditarcarga.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B328918F-447A-42B7-8F77-A3E69160AC4B}|tegma_new_procto_cargas.csproj|c:\\users\\pc\\onedrive\\\u00E1rea de trabalho\\tegma projeto\\tegma windows forms\\tegma_new_procto_cargas\\frmeditarcarga.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B328918F-447A-42B7-8F77-A3E69160AC4B}|tegma_new_procto_cargas.csproj|solutionrelative:frmeditarcarga.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B328918F-447A-42B7-8F77-A3E69160AC4B}|tegma_new_procto_cargas.csproj|C:\\Users\\PC\\OneDrive\\\u00C1rea de Trabalho\\Tegma projeto\\Tegma windows forms\\tegma_new_procto_cargas\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B328918F-447A-42B7-8F77-A3E69160AC4B}|tegma_new_procto_cargas.csproj|solutionrelative:frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B328918F-447A-42B7-8F77-A3E69160AC4B}|tegma_new_procto_cargas.csproj|C:\\Users\\PC\\OneDrive\\\u00C1rea de Trabalho\\Tegma projeto\\Tegma windows forms\\tegma_new_procto_cargas\\frmpesquisa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B328918F-447A-42B7-8F77-A3E69160AC4B}|tegma_new_procto_cargas.csproj|solutionrelative:frmpesquisa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B328918F-447A-42B7-8F77-A3E69160AC4B}|tegma_new_procto_cargas.csproj|C:\\Users\\PC\\OneDrive\\\u00C1rea de Trabalho\\Tegma projeto\\Tegma windows forms\\tegma_new_procto_cargas\\frmpesquisa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B328918F-447A-42B7-8F77-A3E69160AC4B}|tegma_new_procto_cargas.csproj|solutionrelative:frmpesquisa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B328918F-447A-42B7-8F77-A3E69160AC4B}|tegma_new_procto_cargas.csproj|C:\\Users\\PC\\OneDrive\\\u00C1rea de Trabalho\\Tegma projeto\\Tegma windows forms\\tegma_new_procto_cargas\\frmcadastrocarga.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B328918F-447A-42B7-8F77-A3E69160AC4B}|tegma_new_procto_cargas.csproj|solutionrelative:frmcadastrocarga.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B328918F-447A-42B7-8F77-A3E69160AC4B}|tegma_new_procto_cargas.csproj|c:\\users\\pc\\onedrive\\\u00E1rea de trabalho\\tegma projeto\\tegma windows forms\\tegma_new_procto_cargas\\frmcadastrocarga.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B328918F-447A-42B7-8F77-A3E69160AC4B}|tegma_new_procto_cargas.csproj|solutionrelative:frmcadastrocarga.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B328918F-447A-42B7-8F77-A3E69160AC4B}|tegma_new_procto_cargas.csproj|c:\\users\\pc\\onedrive\\\u00E1rea de trabalho\\tegma projeto\\tegma windows forms\\tegma_new_procto_cargas\\frmpesquisa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B328918F-447A-42B7-8F77-A3E69160AC4B}|tegma_new_procto_cargas.csproj|solutionrelative:frmpesquisa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B328918F-447A-42B7-8F77-A3E69160AC4B}|tegma_new_procto_cargas.csproj|c:\\users\\pc\\onedrive\\\u00E1rea de trabalho\\tegma projeto\\tegma windows forms\\tegma_new_procto_cargas\\frmpesquisa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B328918F-447A-42B7-8F77-A3E69160AC4B}|tegma_new_procto_cargas.csproj|solutionrelative:frmpesquisa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B328918F-447A-42B7-8F77-A3E69160AC4B}|tegma_new_procto_cargas.csproj|C:\\Users\\PC\\OneDrive\\\u00C1rea de Trabalho\\Tegma projeto\\Tegma windows forms\\tegma_new_procto_cargas\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B328918F-447A-42B7-8F77-A3E69160AC4B}|tegma_new_procto_cargas.csproj|solutionrelative:frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B328918F-447A-42B7-8F77-A3E69160AC4B}|tegma_new_procto_cargas.csproj|C:\\Users\\PC\\OneDrive\\\u00C1rea de Trabalho\\Tegma projeto\\Tegma windows forms\\tegma_new_procto_cargas\\conexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -37,6 +45,19 @@
           "SelectedChildIndex": 3,
           "Children": [
             {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmEditarCarga.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\\u00C1rea de Trabalho\\Tegma projeto\\Tegma windows forms\\tegma_new_procto_cargas\\frmEditarCarga.Designer.cs",
+              "RelativeDocumentMoniker": "frmEditarCarga.Designer.cs",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\\u00C1rea de Trabalho\\Tegma projeto\\Tegma windows forms\\tegma_new_procto_cargas\\frmEditarCarga.Designer.cs",
+              "RelativeToolTip": "frmEditarCarga.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T23:22:54.106Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
@@ -46,20 +67,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "frmCadastroCarga.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\\u00C1rea de Trabalho\\Tegma projeto\\Tegma windows forms\\tegma_new_procto_cargas\\frmCadastroCarga.cs",
-              "RelativeDocumentMoniker": "frmCadastroCarga.cs",
-              "ToolTip": "C:\\Users\\PC\\OneDrive\\\u00C1rea de Trabalho\\Tegma projeto\\Tegma windows forms\\tegma_new_procto_cargas\\frmCadastroCarga.cs",
-              "RelativeToolTip": "frmCadastroCarga.cs",
-              "ViewState": "AgIAAJ8AAAAAAAAAAAAlwBUBAABCAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "frmEditarCarga.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\\u00C1rea de Trabalho\\Tegma projeto\\Tegma windows forms\\tegma_new_procto_cargas\\frmEditarCarga.cs",
+              "RelativeDocumentMoniker": "frmEditarCarga.cs",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\\u00C1rea de Trabalho\\Tegma projeto\\Tegma windows forms\\tegma_new_procto_cargas\\frmEditarCarga.cs [Design]",
+              "RelativeToolTip": "frmEditarCarga.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T03:29:10.642Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-10T23:23:12.068Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "frmCadastroCarga.cs [Design]",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\\u00C1rea de Trabalho\\Tegma projeto\\Tegma windows forms\\tegma_new_procto_cargas\\frmCadastroCarga.cs",
               "RelativeDocumentMoniker": "frmCadastroCarga.cs",
@@ -71,13 +91,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "frmPesquisa.cs",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\\u00C1rea de Trabalho\\Tegma projeto\\Tegma windows forms\\tegma_new_procto_cargas\\frmPesquisa.cs",
               "RelativeDocumentMoniker": "frmPesquisa.cs",
               "ToolTip": "C:\\Users\\PC\\OneDrive\\\u00C1rea de Trabalho\\Tegma projeto\\Tegma windows forms\\tegma_new_procto_cargas\\frmPesquisa.cs",
               "RelativeToolTip": "frmPesquisa.cs",
-              "ViewState": "AgIAAIQAAAAAAAAAAAAQwJ8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAI0AAAAAAAAAAAAQwJ8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-19T02:42:29.953Z",
               "EditorCaption": ""
@@ -96,7 +116,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Conexao.cs",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\\u00C1rea de Trabalho\\Tegma projeto\\Tegma windows forms\\tegma_new_procto_cargas\\Conexao.cs",
               "RelativeDocumentMoniker": "Conexao.cs",
@@ -104,12 +124,11 @@
               "RelativeToolTip": "Conexao.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-18T20:26:24.333Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-18T20:26:24.333Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "frmPrincipal.cs [Design]",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\\u00C1rea de Trabalho\\Tegma projeto\\Tegma windows forms\\tegma_new_procto_cargas\\frmPrincipal.cs",
               "RelativeDocumentMoniker": "frmPrincipal.cs",
@@ -118,6 +137,19 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-17T22:40:13.42Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "frmCadastroCarga.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\\u00C1rea de Trabalho\\Tegma projeto\\Tegma windows forms\\tegma_new_procto_cargas\\frmCadastroCarga.cs",
+              "RelativeDocumentMoniker": "frmCadastroCarga.cs",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\\u00C1rea de Trabalho\\Tegma projeto\\Tegma windows forms\\tegma_new_procto_cargas\\frmCadastroCarga.cs",
+              "RelativeToolTip": "frmCadastroCarga.cs",
+              "ViewState": "AgIAANAAAAAAAAAAAAAYwA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-19T03:29:10.642Z",
+              "EditorCaption": ""
             }
           ]
         }

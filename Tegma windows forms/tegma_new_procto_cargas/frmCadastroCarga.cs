@@ -12,6 +12,8 @@ namespace tegma_new_procto_cargas
             InitializeComponent();
         }
 
+
+
         private void frmCadastroCarga_Load(object sender, EventArgs e)
         {
             ConfigurarGrid();
